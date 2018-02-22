@@ -7,35 +7,8 @@ import ReactDOM, {render} from 'react-dom';
 
 export default (props) => {
   return (
-    <Temp/>
+    <NavBar/>
     );
-}
-
-class Temp extends Component {
-
-  constructor(props) {
-    super(props);
-  }
-
-  render(){
-    return (
-  <Dropdown id="dropdown-custom-1">
-    <Dropdown.Toggle>
-      <Glyphicon glyph="star" />
-      Pow! Zoom!
-    </Dropdown.Toggle>
-    <Dropdown.Menu className="super-colors">
-      <MenuItem eventKey="1">Action</MenuItem>
-      <MenuItem eventKey="2">Another action</MenuItem>
-      <MenuItem eventKey="3" active>
-        Active Item
-      </MenuItem>
-      <MenuItem divider />
-      <MenuItem eventKey="4">Separated link</MenuItem>
-    </Dropdown.Menu>
-  </Dropdown>  
-
-  )}
 }
 
 class NavBar extends Component {
@@ -47,48 +20,35 @@ class NavBar extends Component {
   render(){
     return (
     	<div>
+        <div className="header">
+
         <Grid>
           <Row>
-            <Col xs={0} md={1}/>
-            <Col xs={12} md={10}>
-              <ButtonToolbar>
-                <DropdownButton
-                  bsSize="large"
-                  title="Large button"
-                  id="dropdown-size-large"
-                >
-                  <MenuItem eventKey="1">Action</MenuItem>
-                  <MenuItem eventKey="2">Another action</MenuItem>
-                  <MenuItem eventKey="3">Something else here</MenuItem>
-                  <MenuItem divider />
-                  <MenuItem eventKey="4">Separated link</MenuItem>
-                </DropdownButton>
-              </ButtonToolbar>
-
-              <ButtonToolbar>
-                  <ButtonGroup>
-                    <Button bsStyle="link" bsSize="large" >
-                        Previous Positions
-                    </Button>
-                    
-
-                    <ButtonToolbar>
-                      <DropdownButton
-                        title="Projects"
-                      >
-                        <MenuItem eventKey="1">"Action"</MenuItem>
-                        <MenuItem eventKey="2">Another action</MenuItem>
-                        <MenuItem eventKey="3" active>
-                          Active Item
-                        </MenuItem>
-                      </DropdownButton>
-                      </ButtonToolbar>
-                  </ButtonGroup>
-              </ButtonToolbar>
-            </Col>
-            <Col xs={0} md={1}/>
+              <Col xs={6}>
+                <div className="temp-photo"/>
+              </Col>
+              <Col xs={6}>
+                <ButtonToolbar>
+                    <ButtonGroup>
+                      <Button bsStyle="link" bsSize="large" className="top-link">
+                          Bio
+                      </Button>
+                      <Button bsStyle="link" bsSize="large" className="top-link">
+                          Past Jobs
+                      </Button>
+                      <Button bsStyle="link" bsSize="large" className="top-link">
+                          Resume
+                      </Button>
+                      <Button bsStyle="link" bsSize="large" className="top-link">
+                          Contact
+                      </Button>
+                    </ButtonGroup>
+                </ButtonToolbar>
+              </Col>
           </Row>
         </Grid>    		  
+            </div>
+
     	</div>
     )
   }

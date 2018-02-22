@@ -1,14 +1,24 @@
 .App {
-  text-align: center;
+  display: block;
+  background: blue;
 }
 
+.header {
+  background: gray;
+  height: 250px;
+}
+.temp-photo {
+  height: 200px;
+  width: 200px;
+  background: white;
+  margin-top:10px;
+}
 
+.top-link {
+  color: white;
+}
 
 .App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
 }
 
 .App-intro {
