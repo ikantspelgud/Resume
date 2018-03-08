@@ -5,5 +5,10 @@ import App from './App';
 import NavBar from './Components/NavBar'
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<NavBar />, document.getElementById('root'));
+import { BrowserRouter } from 'react-router-dom'
+ReactDOM.render((
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
+), document.getElementById('root'));
 registerServiceWorker();
