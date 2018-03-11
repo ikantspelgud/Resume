@@ -20,9 +20,19 @@ class BioPage extends Component {
     	<div>
         <NavBar/>
         <Well>
-          My name is Tom Prince and I live in Austin Texas. I have lived
-          in the Austin area for around 15 years, however 4 of those years
-          were spent in college going to Abilene Christian University.
+I am just a guy who likes to work with others to write software. I enjoy working in collaborative work environments to come up with great solutions to tough problems.
+
+Languages: JavaScript, Python, C++, C 
+Front End: HTML, CSS, jQuery, JSON, AJAX 
+Frameworks & Environments: React, Node.js, Django 
+Other: Git, SVN, CVS, Linux, Windows, Sublime
+
+I am a quick learner and enjoy adding new tools to my skill set. I enjoy trying new things and like to see how both software and software development are improving and evolving every day.
+
+If you think I would be a good fit on your team or would like to collaborate on a project, feel free to get in touch. 
+
+TomRobPrince@gmail.com
+Code: github.com/ikantspelgud
         </Well>
     	</div>
     )

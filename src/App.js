@@ -4,6 +4,11 @@ import './App.css';
 import BioPage from './Pages/BioPage'
 import MainPage from './Pages/MainPage'
 import ContactPage from './Pages/ContactPage'
+import ResumePage from './Pages/ResumePage'
+import ProjectsPage from './Pages/ProjectsPage'
+
+
+
 
 
 
@@ -17,6 +22,8 @@ class App extends Component {
           <Route exact path='/' component={MainPage}/>
           <Route exact path='/Bio' component={BioPage}/>
           <Route exact path='/Contact' component={ContactPage}/>
+          <Route exact path='/Resume' component={ResumePage}/>
+          <Route exact path='/Projects' component={ProjectsPage}/>
 
         </Switch>
       </div>

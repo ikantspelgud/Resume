@@ -26,7 +26,7 @@ class NavBar extends Component {
           <Row className="v-fill">
               <Col xs={0} md={1}/>
               <Col xs={12} md={3}>
-                <img src="profilePic.jpg" alt="Headshot" height="200" width="200" className="temp-photo"/>
+                <img src="profilePic.jpg" alt="Headshot" height="auto" max-width="100%" className="temp-photo"/>
               </Col>
               <Col xs={12} md={8}>
                 <ButtonGroup>
@@ -40,9 +40,9 @@ class NavBar extends Component {
                       Bio
                     </Button>
                   </Link>
-                  <Link to="/Jobs">
+                  <Link to="/Projects">
                     <Button bsStyle="link" bsSize="large" className="top-link">
-                        Past Jobs
+                      Projects
                     </Button>
                   </Link>
                   <Link to="/Resume">
